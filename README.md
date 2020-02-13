@@ -5,4 +5,4 @@ the 1st paired device.
 
 It then starts a thread, connects to the device and prints the received data continously on the screen.
 
-`main.cpp` is the main program written in C++. The C++ class MacosBT has a pure C++ header and only MacosBT is written in mixed C++ and ObjectiveC++ briding both languages.
+`main.cpp` is the main program written in C++. The C++ class `MacosBT` has a pure C++ header and only `MacosBT` is written in mixed C++ and ObjectiveC++ linking both languages.
