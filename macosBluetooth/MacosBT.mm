@@ -48,10 +48,7 @@
 
 @end
 
-void MacosBT::clearText()
-{
-    fprintf(stderr,"\n");
-}
+
 
 void MacosBT::sendMessage(char* dataToSend, int len)
 {
@@ -59,9 +56,10 @@ void MacosBT::sendMessage(char* dataToSend, int len)
     [(__bridge IOBluetoothRFCOMMChannel*)rfcommchannel writeSync:(void*)dataToSend length:len];
 }
 
-void MacosBT::dataRec(const char *text)
+
+void MacosBT::dataRec(const char *dataReceived)
 {
-    printf("%s\n",text); // do something more sensible than just printing it! For example establishing a callback here.
+    printf("%s\n",dataReceived); // do something more sensible than just printing it! For example establishing a callback here.
 }
 
 
@@ -130,6 +128,7 @@ void MacosBT::start() {
 void MacosBT::stop() {
     running = 0;
     uthread->join();
+    closeConnection();
 }
 
 void MacosBT::closeConnection() {

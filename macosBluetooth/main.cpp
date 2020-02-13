@@ -3,7 +3,7 @@
 //  iosBluetooth
 //
 //  Created by Bernd Porr on 11/02/2020.
-//  Copyright © 2020 Bernd Porr. All rights reserved.
+//  Copyright © 2020 Bernd Porr. Apache license.
 //
 
 #include <iostream>

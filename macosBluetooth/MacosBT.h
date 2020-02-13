@@ -13,9 +13,8 @@
 
 class MacosBT {
 public:
-    void clearText();
     void sendMessage(char* dataToSend, int len);
-    void dataRec(const char *text);
+    void dataRec(const char *dataReceived);
     void start();
     void stop();
     void closeConnection();
