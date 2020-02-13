@@ -1,4 +1,4 @@
-# OSX RFcomm wrapper for C++
+# MacOS RFcomm wrapper for C++
 
 This is a small helper / code demo which connects to a paired RFCOMM bluetooth device. It expects the RFCOMM device as
 the 1st paired device.
