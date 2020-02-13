@@ -61,7 +61,7 @@ void MacosBT::sendMessage(char* dataToSend, int len)
 
 void MacosBT::dataRec(const char *text)
 {
-    fprintf(stderr,"%s\n",text);
+    printf("%s\n",text); // do something more sensible than just printing it! For example establishing a callback here.
 }
 
 
